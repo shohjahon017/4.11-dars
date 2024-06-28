@@ -43,15 +43,15 @@
 
 //5-masala
 // function minElement(arr) {
-//   let min = [0];
-//   arr.forEach(function (value) {
-//     if (value < min) {
-//       min = value;
+//   let min = 0;
+//   for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] < arr[min]) {
+//       min = i;
 //     }
-//   });
+//   }
 //   return min;
 // }
-// console.log(minElement([1, 5, 6, 7, 5]));
+// console.log(minElement([9, 5, 6, 7, 5]));
 
 //6-masala
 // function smallElement(str) {
@@ -110,17 +110,21 @@
 // console.log(createMassiv([-1, 1, 5, -5]));
 
 //12-masala
-// function removeNumbers(str) {}
+// function removeNumbers(str) {
+//   let res = str.replaceAll(/[1-9]/g, "");
+//   return res;
+// }
+// console.log(removeNumbers("sal5om 4dun9yo"));
+
 // //13-masala
 // function reverseElement(str) {
-//   let res = str.split();
+//   let res = str.split("");
 //   res.reverse();
-//   return res;
+//   return res.join("");
 // }
 // console.log(reverseElement("hello hello hello"));
 
 //14-masala
-
 // function twiceMassiv(arr) {
 //   let res = [];
 //   arr.forEach(function (value) {
@@ -129,3 +133,62 @@
 //   return res;
 // }
 // console.log(twiceMassiv([3, 5, 6, 8, 9]));
+
+// //15-masala
+// function changeFirstLast(str) {
+//   let res = str.split("");
+//   let first = res[0];
+//   let last = res[res.length - 1];
+//   res[0] = last;
+//   res[res.length - 1] = first;
+//   return res.join("");
+// }
+// console.log(changeFirstLast("hello"));
+
+//16-masala
+// function pairSum(n) {
+//   let count = 0;
+//   for (let i = 1; i <= n; i++) {
+//     if (i % 2 == 0) {
+//       count += i;
+//     }
+//   }
+//   return count;
+// }
+// console.log(pairSum(10));
+
+//17-masala
+// function CapitalizeLetter(str) {
+//   let res = str.toUpperCase();
+//   return res;
+// }
+// console.log(CapitalizeLetter("salom dunyo"));
+
+//18-masala
+// function sortElement(arr) {
+//   let res = arr.sort();
+//   return res;
+// }
+// console.log(sortElement(["A", 1, 25, 86, "B"]));
+
+//19-masala
+// function CapitalizeFirstLetter(str) {
+//   let res = str.split(" ");
+//   res = res.map(function (value) {
+//     return value[0].toUpperCase() + value.slice(1);
+//   });
+//   return res.join(" ");
+// }
+// console.log(CapitalizeFirstLetter("hello world"));
+
+//20-masala
+// function removeOddNumbers(n) {
+//   let a = [];
+//   for (let i = 1; i < n; i++) {
+//     if (i % 2 == 0) {
+//       a.push(i);
+//     }
+//   }
+//   return a;
+// }
+// console.log(removeOddNumbers(10));
